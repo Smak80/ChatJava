@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            var srv = new Server(9360);
+            new Server(9360);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
     }
 
