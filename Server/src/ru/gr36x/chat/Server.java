@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Server {
 
-    private ServerSocket sSocket;
+    private final ServerSocket sSocket;
     private boolean isRunning = true;
 
     public Server(int port) throws IOException {
@@ -26,7 +26,7 @@ public class Server {
         isRunning = false;
         try {
             sSocket.close();
-        } catch (IOException e) {
+        } catch (IOException _) {
         }
     }
 
